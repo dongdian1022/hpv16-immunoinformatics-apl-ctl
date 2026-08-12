@@ -1,0 +1,7 @@
+System,MedianDiff_A,MeanDiff_A,MaxDiff_A,MaxAtPosition
+E6apl_10mer,0.1751,0.1748,0.3382,P7
+E6wt_10mer,0.2545,0.4539,1.6578,P6
+E7apl1_9mer,0.1042,0.1015,0.1846,P9
+E7apl2_10mer,0.2392,0.2947,0.5532,P3
+E7wt1_9mer,0.1050,0.0947,0.1830,P1
+E7wt2_10mer,0.5809,0.5892,0.9940,P6
