@@ -1,0 +1,88 @@
+
+CPPTRAJ: Trajectory Analysis. V7.6.2 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 08/05/26 18:44:37
+| Available memory: 678.248 MB
+
+INPUT: Reading input from '/media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/new_analysis/cocomaps/scripts/E6wt_export.in'
+  [parm /media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/new_analysis/prmtops/E6wt_10mer_com.prmtop]
+	Reading '/media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/new_analysis/prmtops/E6wt_10mer_com.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin /media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/analysis/clean_traj/E6wt_10mer_clean.nc 4001 10000 10]
+	Reading '/media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/analysis/clean_traj/E6wt_10mer_clean.nc' as Amber NetCDF
+Warning: Trajectory box type is 'Orthorhombic' but topology box type is 'None'.
+Warning: Setting topology box information from trajectory.
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+	Auto-imaging using molecule distances.
+  [rms first :1-365@CA,C,N]
+    RMSD: (:1-365@CA,C,N), reference is first frame (:1-365@CA,C,N).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [trajout /media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/new_analysis/cocomaps/pdb/E6wt_raw.pdb pdb onlyframes 1]
+	Saving frames 1
+	Writing '/media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/new_analysis/cocomaps/pdb/E6wt_raw.pdb' as PDB
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: E6wt_10mer_com.prmtop, 6153 atoms, 385 res, box: Orthorhombic, 3 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'E6wt_10mer_clean.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm E6wt_10mer_com.prmtop (Orthorhombic box) (reading 600 of 10000)
+  Coordinate processing will occur on 600 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'E6wt_raw.pdb' (600 frames) is a PDB file: Writing frames 1
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'E6wt_10mer_com.prmtop' (2 actions):
+  0: [autoimage]
+	Using first molecule as anchor.
+	2 molecules are fixed to anchor: 2 3
+	0 molecules are mobile.
+  1: [rms first :1-365@CA,C,N]
+	Target mask: [:1-365@CA,C,N](1095)
+	Reference topology: E6wt_10mer_com.prmtop
+	Reference mask: [:1-365@CA,C,N](1095)
+Warning: No PDB space group specified.
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  /media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/new_analysis/cocomaps/pdb/E6wt_raw.pdb (coordinates, time, box)
+----- E6wt_10mer_clean.nc (4001-10000, 10) -----
+Warning: Set 1; unit cell is not X-aligned. Box cannot be properly stored as PDB CRYST1.
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% Complete.
+
+Read 600 frames and processed 600 frames.
+TIME: Avg. throughput= 10600.3321 frames / second.
+Warning: E6wt_raw.pdb: unit cell was not X-aligned for 1 frames.
+Warning: This trajectory format expects unit cells to be X-aligned,
+Warning: so the unit cell orientation may not be correct.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (1 total):
+	RMSD_00001 "RMSD_00001" (double, rms), size is 600 (4.800 kB)
+    Total data set memory usage is at least 4.800 kB
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.01%)
+TIME:		Trajectory Process : 0.0566 s ( 99.93%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0566 s
+---------- RUN END ---------------------------------------------------
+  [quit]
+TIME: Total execution time: 0.0716 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

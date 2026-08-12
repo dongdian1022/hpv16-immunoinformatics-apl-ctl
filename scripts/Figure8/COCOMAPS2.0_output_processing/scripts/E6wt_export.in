@@ -1,0 +1,12 @@
+parm /media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/new_analysis/prmtops/E6wt_10mer_com.prmtop
+
+trajin /media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/analysis/clean_traj/E6wt_10mer_clean.nc 4001 10000 10
+
+autoimage
+
+rms first :1-365@CA,C,N
+
+trajout /media/geno/3d3722c0-43ee-42ed-ae82-7a640071f8b1/ST_PRESICION/dongdian/AIDD-3D-Pred/6_epitopes_hla_pred/new_analysis/cocomaps/pdb/E6wt_raw.pdb pdb onlyframes 1
+
+run
+quit

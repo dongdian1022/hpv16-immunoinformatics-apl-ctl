@@ -1,0 +1,7 @@
+System,Pair,Type,H_bond,CH_O_N,Apolar_vdw,Polar_vdw,CH_pi,pi_pi,Amino_pi,Anion_pi,Cation_pi,Proximal,Clash,FavorableContacts
+E6wt,E6,WT,9,5,17,14,1,0,0,0,0,34,2,80
+E6apl,E6,APL,6,6,13,12,0,1,0,0,0,30,1,68
+E7wt1,E7-1,WT,12,5,25,22,4,0,0,0,0,23,1,91
+E7apl1,E7-1,APL,12,11,19,24,5,2,0,0,0,22,1,95
+E7wt2,E7-2,WT,9,4,14,19,3,1,0,0,0,25,1,75
+E7apl2,E7-2,APL,7,8,9,23,2,1,0,0,0,31,1,81
